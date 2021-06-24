@@ -1,25 +1,12 @@
 <html>
    <head><title>Cookie-cam Live-stream</title></head>
-   
-<?php
-if (isset($_GET['url'])) {
-    $url = $_GET['url'];
-    $ch = curl_init();
-    $timeout = 5;
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-    $data = curl_exec($ch);
-    curl_close($ch);
-    echo $data;
-}
-?>	
+
    <body>
       <center><h1>Sofa Dog</h1></center>
         <center>
       <!-- <img src="http://59.127.53.27:8080/?action=stream" /> -->
+	<iframe src="https://www.google.ie/gwt/x?u=http://140.117.89.83:8888/s3.mjpeg"></frame>
 
-	<iframe src="/redirect.php?url=http://140.117.89.83:8888/s3.mjpeg"></iframe>
  <body>
 </html>
 
